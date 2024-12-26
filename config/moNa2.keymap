@@ -22,6 +22,34 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        macro0: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(V)) &kp V &kp ENTER>;
+            label = "MACRO1";
+        };
+
+        macro1: macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp M &kp C &kp ENTER>;
+            label = "MACRO2";
+        };
+
+        macro2: macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G) &kp LA(S) &kp K &kp ENTER>;
+            label = "MACRO3";
+        };
+
+        macro3: macro0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(S) &kp T>;
+            label = "MACRO0";
+        };
     };
 
     behaviors {
@@ -51,7 +79,7 @@
 &lt 4 Q    &kp W         &kp E         &kp R                      &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                      &kp G        &trans                &kp ESC        &kp H        &kp J  &kp K      &kp L    &mt LCTRL MINUS
 &kp Z      &kp X         &kp C         &kp V                      &kp B        &lt 4 COLON           &kp DELETE     &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_HANJA  &lt 2 SPACE  &lt 3 INT_MUHENKAN    &kp BACKSPACE  &lt 1 ENTER                             &kp LCTRL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_HANJA  &lt 2 SPACE  &lt 5 LANG_HANGEUL    &kp BACKSPACE  &lt 1 ENTER                             &kp LCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -103,10 +131,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp LS(F8)  &macro2    &trans            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans  &macro3  &trans  &trans  &trans
+&kp LC(P)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(PERIOD)   &trans             &trans    &trans  &trans  &trans   &trans  &trans  &trans
+&kp LC(Y)   &kp LC(C)  &macro0           &macro1          &trans             &trans    &trans  &trans  &trans   &trans  &trans  &trans
+&kp LC(Z)   &trans     &trans            &trans           &trans             &trans    &trans  &trans                           &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&scroll_up_down>;

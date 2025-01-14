@@ -47,7 +47,7 @@
         macro3: macro0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(S) &kp T>;
+            bindings = <&kp LEFT_ALT &kp D &kp F &kp S>;
             label = "MACRO0";
         };
     };
@@ -131,10 +131,10 @@
 
         layer_5 {
             bindings = <
-&kp LS(F8)  &macro2    &trans            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &trans  &trans  &trans
-&kp LC(P)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(PERIOD)   &trans             &trans    &trans  &trans  &trans         &trans  &trans  &trans
-&kp LC(Y)   &kp LC(C)  &macro0           &macro1          &trans             &trans    &trans  &trans  &trans         &trans  &trans  &trans
-&kp LC(Z)   &trans     &trans            &trans           &trans             &trans    &trans  &trans                                 &kp LA(LC(DELETE))
+&kp LS(F8)  &macro2    &trans            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &macro3  &kp LS(LC(L))  &trans  &trans  &kp ESC
+&kp LC(P)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(PERIOD)   &kp LCTRL          &trans    &trans  &trans   &trans         &trans  &trans  &trans
+&kp LC(Y)   &kp LC(C)  &macro0           &macro1          &trans             &trans    &trans  &trans   &trans         &trans  &trans  &trans
+&kp LC(Z)   &trans     &trans            &trans           &trans             &trans    &trans  &trans                                  &kp LA(LC(DELETE))
             >;
 
             sensor-bindings = <&scroll_up_down>;

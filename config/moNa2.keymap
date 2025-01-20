@@ -13,7 +13,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <7 8>;
+        };
+
+        Shift+Tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <6 7 8>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {

@@ -13,7 +13,6 @@
 };
 
 &sl { release-after-ms = <250>; }; // ダブルクリックに必要な時間を設定
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -75,7 +74,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl MOUSE>;
+                <&tog_off 6>;
 
             label = "MKP_EXIT_AML";
         };
@@ -86,8 +85,6 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-
-
     };
 
     behaviors {

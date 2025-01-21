@@ -79,6 +79,15 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
+        };
+
+
     };
 
     behaviors {

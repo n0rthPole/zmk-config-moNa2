@@ -74,11 +74,10 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&tog_off 6>;
+                <&sl 6>;
 
             label = "MKP_EXIT_AML";
         };
-
     };
 
     behaviors {

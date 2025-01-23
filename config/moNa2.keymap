@@ -13,6 +13,7 @@
 };
 
 &sl { release-after-ms = <250>; }; // ダブルクリックに必要な時間を設定
+
 / {
     combos {
         compatible = "zmk,combos";

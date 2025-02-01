@@ -78,6 +78,31 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        bt0: bt0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1 &tog_off 7>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
+
+            label = "BT0";
+        };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 7>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 7>;
+
+            label = "BT1";
+        };
     };
 
     behaviors {
@@ -111,8 +136,6 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-
-
     };
 
     keymap {

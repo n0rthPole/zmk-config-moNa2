@@ -201,7 +201,7 @@
 &kp ESCAPE         &kp N7                   &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                               &kp LS(TAB)       &kp LG(RIGHT_BRACKET)  &kp LC(UP_ARROW)  &kp LG(BACKSLASH)  &kp TAB
 &kp DOUBLE_QUOTES  &kp NUMBER_4             &kp N5        &kp NUMBER_6  &kp COLON      &trans           &trans  &kp LS(NUMBER_9)  &mkp MB1               &kp UP_ARROW      &mkp MB2           &kp SINGLE_QUOTE
 &kp SLASH          &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans           &trans  &trans            &kp LEFT_ARROW         &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans
-&mt LCTRL TAB      &mt LEFT_SHIFT NUMBER_0  &kp PERIOD    &kp DEL       &kp ENTER      &kp BACKSPACE    &trans  &trans                                                                        &kp F12
+&mt LEFT_GUI TAB   &mt LEFT_SHIFT NUMBER_0  &kp PERIOD    &kp DEL       &kp ENTER      &kp BACKSPACE    &trans  &trans                                                                        &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -209,10 +209,10 @@
 
         mac_layer_2 {
             bindings = <
-&kp F1     &kp F2           &kp F3            &kp F4        &trans                        &kp F6                   &kp F7               &kp F8         &kp F9    &kp F10
-&kp F5     &kp EXCLAMATION  &kp LS(NUMBER_6)  &kp QUESTION  &kp LS(N8)  &trans    &trans  &kp LEFT_BRACKET         &mkp MB1             &kp PAGE_UP    &mkp MB2  &kp SINGLE_QUOTE
-&kp PLUS   &kp PERCENT      &kp AMPERSAND     &kp AT_SIGN   &trans      &trans    &trans  &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_3  &kp PAGE_DOWN  &trans    &kp F11
-&kp LCTRL  &trans           &kp POUND         &trans        &trans      &trans    &trans  &trans                                                                 &kp F12
+&kp F1        &kp F2           &kp F3            &kp F4        &trans                        &kp F6                   &kp F7               &kp F8         &kp F9    &kp F10
+&kp F5        &kp EXCLAMATION  &kp LS(NUMBER_6)  &kp QUESTION  &kp LS(N8)  &trans    &trans  &kp LEFT_BRACKET         &mkp MB1             &kp PAGE_UP    &mkp MB2  &kp SINGLE_QUOTE
+&kp PLUS      &kp PERCENT      &kp AMPERSAND     &kp AT_SIGN   &trans      &trans    &trans  &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_3  &kp PAGE_DOWN  &trans    &kp F11
+&kp LEFT_GUI  &trans           &kp POUND         &trans        &trans      &trans    &trans  &trans                                                                 &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;

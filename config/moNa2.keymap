@@ -277,10 +277,10 @@
 
         ipad_layer_3 {
             bindings = <
-&kp ESCAPE      &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LC(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LC(RIGHT_ARROW)      &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(D)           &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans              &trans                   &trans   &trans    &trans  &trans                          &trans
+&kp ESCAPE  &trans  &kp LG(UP_ARROW)    &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &kp LG(DOWN_ARROW)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans              &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans              &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

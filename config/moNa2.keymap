@@ -189,10 +189,10 @@
 
         win_layer_3 {
             bindings = <
-&kp ESCAPE  &kp LG(LEFT_ARROW)      &kp UP_ARROW    &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LG(LS(LEFT_ARROW))  &kp LG(D)       &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&kp ESCAPE  &kp LG(LEFT_ARROW)      &kp LS(LC(UP_ARROW))    &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans  &trans  &trans  &trans
+&kp HOME    &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LG(LS(LEFT_ARROW))  &kp LG(D)               &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans                  &trans                  &trans                   &trans   &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

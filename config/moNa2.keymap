@@ -189,10 +189,10 @@
 
         win_layer_3 {
             bindings = <
-&kp ESCAPE      &kp LG(LEFT_ARROW)      &kp UP_ARROW    &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(D)       &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&kp ESCAPE  &kp LG(LEFT_ARROW)      &kp UP_ARROW    &kp LG(RIGHT_ARROW)      &trans                     &trans  &trans  &trans  &trans  &trans
+&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LG(LS(LEFT_ARROW))  &kp LG(D)       &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -310,10 +310,10 @@
 
         scroll_layer {
             bindings = <
-&kp LA(F8)  &macro2    &trans            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &macro3  &kp LS(LC(L))  &none   &trans  &trans
-&kp LC(P)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(MINUS)    &trans             &trans    &trans  &trans   &trans         &trans  &trans  &trans
-&kp LC(Y)   &kp LC(C)  &macro0           &macro1          &trans             &trans    &trans  &trans   &trans         &trans  &trans  &trans
-&kp LC(Z)   &trans     &trans            &trans           &trans             &trans    &trans  &trans                                  &trans
+&kp LA(F8)  &macro2    &trans            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                       &macro3  &kp LS(LC(L))  &none   &trans  &trans
+&kp LC(P)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(MINUS)    &trans             &trans       &trans  &trans   &trans         &trans  &trans  &trans
+&kp LC(Y)   &kp LC(C)  &macro0           &macro1          &trans             &kp LCTRL    &trans  &trans   &trans         &trans  &trans  &trans
+&kp LC(Z)   &trans     &trans            &trans           &trans             &trans       &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

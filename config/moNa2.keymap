@@ -160,8 +160,8 @@
 
         win_default_layer {
             bindings = <
-&lt 12 Q   &kp W         &kp E         &kp R                      &kp T                                                         &kp Y        &kp U  &lt 14 I   &lt 3 O  &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &none                             &to 15         &kp H        &kp J  &kp K      &kp L    &mt LCTRL MINUS
+&lt 12 Q   &kp W         &kp E         &kp R                      &kp T                                                         &kp Y        &kp U  &kp I      &lt 3 O  &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G        &none                             &to 15         &kp H        &kp J  &lt 14 K   &kp L    &mt LCTRL MINUS
 &kp Z      &kp X         &kp C         &kp V                      &kp B        &kp LS(LG(S))                     &none          &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_HANJA  &lt 2 SPACE  &lt_to_layer_0 14 LANG_HANGEUL    &kp BACKSPACE  &lt 1 ENTER                             &kp LCTRL
             >;
@@ -204,8 +204,8 @@
 
         mac_default_layer {
             bindings = <
-&lt 12 Q      &kp W      &kp E         &kp R                      &kp T                                                 &kp Y        &kp U  &lt 14 I   &lt 7 O  &kp P
-&kp A         &kp S      &kp D         &kp F                      &kp G        &trans                 &kp LC(UP_ARROW)  &kp H        &kp J  &kp K      &kp L    &mt LEFT_GUI MINUS
+&lt 12 Q      &kp W      &kp E         &kp R                      &kp T                                                 &kp Y        &kp U  &kp I      &lt 7 O  &kp P
+&kp A         &kp S      &kp D         &kp F                      &kp G        &trans                 &kp LC(UP_ARROW)  &kp H        &kp J  &lt 14 K   &kp L    &mt LEFT_GUI MINUS
 &kp Z         &kp X      &kp C         &kp V                      &kp B        &kp LG(LS(N4))         &kp DELETE        &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_HANJA  &lt 6 SPACE  &lt 14 LANG_HANGEUL    &kp BACKSPACE     &lt 5 ENTER                             &kp LEFT_GUI
             >;
@@ -248,8 +248,8 @@
 
         ipad_default_layer {
             bindings = <
-&lt 12 Q      &kp W      &kp E         &kp R                      &kp T                                                  &kp Y        &kp U  &lt 14 I   &lt 11 O  &kp P
-&kp A         &kp S      &kp D         &kp F                      &kp G         &trans                 &kp LC(UP_ARROW)  &kp H        &kp J  &kp K      &kp L     &mt LEFT_GUI MINUS
+&lt 12 Q      &kp W      &kp E         &kp R                      &kp T                                                  &kp Y        &kp U  &kp I      &lt 11 O  &kp P
+&kp A         &kp S      &kp D         &kp F                      &kp G         &trans                 &kp LC(UP_ARROW)  &kp H        &kp J  &lt 14 K   &kp L     &mt LEFT_GUI MINUS
 &kp Z         &kp X      &kp C         &kp V                      &kp B         &kp LG(LS(N4))         &kp DELETE        &kp N        &kp M  &kp COMMA  &kp DOT   &mt LEFT_SHIFT SLASH
 &kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &mt LEFT_SHIFT LANG_HANJA  &lt 10 SPACE  &lt 14 LANG_HANGEUL    &kp BACKSPACE     &lt 9 ENTER                              &kp LEFT_GUI
             >;

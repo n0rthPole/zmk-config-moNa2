@@ -192,7 +192,7 @@
             bindings = <
 &kp ESCAPE         &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                               &kp LS(TAB)    &none           &kp LG(TAB)     &none            &kp TAB
 &kp DOUBLE_QUOTES  &kp NUMBER_4             &kp NUMBER_5  &kp NUMBER_6  &kp COLON      &trans           &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
-&kp SLASH          &kp N1                   &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans           &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
+&kp SLASH          &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans           &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
 &mt LCTRL COMMA    &mt LEFT_SHIFT NUMBER_0  &kp PERIOD    &kp DEL       &kp ENTER      &kp BACKSPACE    &trans  &trans                                                          &none
             >;
 

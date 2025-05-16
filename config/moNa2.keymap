@@ -190,10 +190,10 @@
 
         win_layer_1 {
             bindings = <
-&kp ESCAPE         &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                               &kp LS(TAB)    &none           &kp LG(TAB)     &none            &kp TAB
-&kp DOUBLE_QUOTES  &kp NUMBER_4             &kp NUMBER_5  &kp NUMBER_6  &kp COLON      &trans           &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
-&kp SLASH          &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans           &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
-&mt LCTRL COMMA    &mt LEFT_SHIFT NUMBER_0  &kp PERIOD    &kp DEL       &kp ENTER      &kp BACKSPACE    &trans  &trans                                                          &none
+&kp ESCAPE         &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &kp LS(TAB)    &none           &kp LG(TAB)     &none            &kp TAB
+&kp DOUBLE_QUOTES  &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON      &trans            &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
+&kp SLASH          &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &kp KP_NUMLOCK    &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
+&mt LCTRL COMMA    &mt LEFT_SHIFT KP_NUMBER_0  &kp PERIOD       &kp DEL          &kp ENTER      &kp BACKSPACE     &trans  &trans                                                          &none
             >;
 
             sensor-bindings = <&scroll_up_down>;

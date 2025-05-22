@@ -36,14 +36,14 @@
             key-positions = <2 3 4>;
         };
 
-        left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <18 19>;
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <30 31>;
         };
 
-        right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <18 20>;
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <31 32>;
         };
     };
 

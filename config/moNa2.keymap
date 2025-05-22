@@ -35,6 +35,16 @@
             bindings = <&kp LS(LG(S))>;
             key-positions = <2 3 4>;
         };
+
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {

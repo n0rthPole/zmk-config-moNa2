@@ -149,6 +149,17 @@
             bindings = <&kp J &kp J &kp Z>;
             label = "ORDER2";
         };
+
+        macro4: macro_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(LC(DOWN_ARROW)) &kp LS(LC(RIGHT_ARROW))>,
+                <&macro_press>,
+                <&kp LS(LC(RIGHT_ARROW))>;
+
+            label = "MACRO_4";
+        };
     };
 
     behaviors {

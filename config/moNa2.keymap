@@ -368,10 +368,10 @@
 
         tenki_layer_15 {
             bindings = <
-&kp LA(F8)  &none      &trans   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &macro3   &trans     &kp LA(TAB)
-&kp LC(Y)   &macro_5   &macro4  &macro0          &trans             &trans    &to 0   &trans  &mkp LCLK      &lt 14 K  &mkp RCLK  &trans
-&kp LC(Z)   &kp LC(C)  &macro0  &macro1          &trans             &trans    &trans  &trans  &trans         &trans    &trans     &trans
-&trans      &trans     &trans   &trans           &trans             &trans    &trans  &trans                                      &trans
+&kp LA(F8)  &none      &trans   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans         &trans          &trans          &trans           &kp LA(TAB)
+&kp LC(Y)   &macro_5   &macro4  &macro0          &trans             &trans    &to 0   &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &trans
+&kp LC(Z)   &kp LC(C)  &macro0  &macro1          &trans             &trans    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans      &trans     &trans   &trans           &trans             &trans    &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

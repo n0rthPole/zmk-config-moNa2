@@ -153,8 +153,15 @@
         macro4: macro_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(DOWN_ARROW)) &kp LS(LC(RIGHT_ARROW)) &kp LS(LC(RIGHT_ARROW))>;
+            bindings = <&kp LS(LC(DOWN_ARROW)) &kp LS(LC(RIGHT_ARROW)) &kp LS(LC(RIGHT_ARROW)) &kp LC(C)>;
             label = "MACRO_4";
+        };
+
+        macro_5: macro_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(RIGHT_ARROW)) &kp LS(LC(RIGHT_ARROW)) &kp LC(C)>;
+            label = "MACRO_5";
         };
     };
 
@@ -361,10 +368,10 @@
 
         tenki_layer_15 {
             bindings = <
-&kp LA(F8)  &none      &macro4           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &macro3   &trans     &kp LA(TAB)
-&kp LC(Y)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(MINUS)    &trans             &trans    &to 0   &trans  &mkp LCLK      &lt 14 K  &mkp RCLK  &trans
-&kp LC(Z)   &kp LC(C)  &macro0           &macro1          &trans             &trans    &trans  &trans  &trans         &trans    &trans     &trans
-&trans      &trans     &trans            &trans           &trans             &trans    &trans  &trans                                      &trans
+&kp LA(F8)  &none      &trans   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &macro3   &trans     &kp LA(TAB)
+&kp LC(Y)   &macro_5   &macro4  &macro0          &trans             &trans    &to 0   &trans  &mkp LCLK      &lt 14 K  &mkp RCLK  &trans
+&kp LC(Z)   &kp LC(C)  &macro0  &macro1          &trans             &trans    &trans  &trans  &trans         &trans    &trans     &trans
+&trans      &trans     &trans   &trans           &trans             &trans    &trans  &trans                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

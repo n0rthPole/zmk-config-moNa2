@@ -163,6 +163,13 @@
             bindings = <&kp LS(LC(RIGHT_ARROW)) &kp LS(LC(RIGHT_ARROW)) &kp LC(C)>;
             label = "MACRO_5";
         };
+
+        macro_6: macro_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(DOWN_ARROW)) &kp LA(H) &kp M &kp C &kp ENTER>;
+            label = "MACRO_6";
+        };
     };
 
     behaviors {
@@ -369,7 +376,7 @@
         tenki_layer_15 {
             bindings = <
 &kp LA(F8)  &kp DEL    &trans   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &trans         &trans          &trans          &trans           &kp LA(TAB)
-&kp LC(Y)   &macro_5   &macro4  &macro0          &trans             &trans    &to 0   &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &trans
+&kp LC(Y)   &macro_5   &macro4  &macro0          &macro_6           &trans    &to 0   &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &trans
 &kp LC(Z)   &kp LC(C)  &macro0  &macro1          &trans             &trans    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans      &trans     &trans   &trans           &trans             &trans    &trans  &trans                                                          &trans
             >;

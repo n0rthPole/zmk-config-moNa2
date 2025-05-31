@@ -104,8 +104,9 @@
             bindings =
                 <&tog_off 4 &tog_off 8>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 0 &bt BT_DISC 1 &bt BT_DISC 2>,
-                <&macro_wait_time 500>;
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&bt BT_DISC 1 &bt BT_DISC 2>;
 
             label = "BT0";
         };
@@ -116,9 +117,9 @@
             bindings =
                 <&tog_off 0 &tog_off 4 &tog_off 8>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 1 &bt BT_DISC 0 &bt BT_DISC 2>,
+                <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
-                <&tog_on 4>;
+                <&tog_on 4 &bt BT_DISC 0 &bt BT_DISC 2>;
 
             label = "BT1";
         };
@@ -129,9 +130,9 @@
             bindings =
                 <&tog_off 0 &tog_off 4 &tog_off 8>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 2 &bt BT_DISC 0 &bt BT_DISC 1>,
+                <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 8>;
+                <&tog_on 8 &bt BT_DISC 0 &bt BT_DISC 1>;
 
             label = "BT2";
         };

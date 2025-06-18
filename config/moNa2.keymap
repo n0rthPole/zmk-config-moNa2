@@ -250,10 +250,10 @@
 
         win_layer_1 {
             bindings = <
-&kp ESCAPE          &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &trans         &kp LS(TAB)     &kp LG(TAB)     &to 16           &kp TAB
-&kp KP_ASTERISK     &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON      &trans            &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
-&kp KP_SLASH        &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &kp KP_NUMLOCK    &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
-&mt LCTRL KP_COMMA  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_DOT       &kp DEL          &kp ENTER      &kp BACKSPACE     &trans  &trans                                                          &trans
+&kp ESCAPE       &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &trans         &kp LS(TAB)     &kp LG(TAB)     &trans           &kp TAB
+&kp KP_ASTERISK  &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON      &trans            &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
+&kp KP_SLASH     &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &kp KP_NUMLOCK    &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
+&mt LCTRL COMMA  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_DOT       &kp DEL          &kp ENTER      &kp BACKSPACE     &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -411,15 +411,6 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        right_tenkey {
-            bindings = <
-&kp ESCAPE  &mo 15  &kp LS(TAB)  &kp TAB  &trans                    &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
-&to 0       &trans  &kp Z        &kp J    &trans  &trans    &trans  &kp KP_SLASH     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
-&trans      &trans  &kp D        &kp S    &trans  &trans    &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT
-&trans      &trans  &trans       &trans   &trans  &trans    &trans  &trans                                            &kp KP_COMMA
-            >;
         };
     };
 };

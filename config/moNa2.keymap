@@ -1,4 +1,5 @@
 //#include "layout_shift.dtsi"
+
 #include <layout_shift_kp_override.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -293,7 +294,7 @@
 
         mac_layer_1 {
             bindings = <
-&kp ESCAPE          &kp N7                   &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                               &kp LS(TAB)         &none                  &kp LC(UP_ARROW)  &none              &kp TAB
+&kp ESCAPE          &kp N7                   &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                               &none               &kp LS(TAB)            &kp LC(UP_ARROW)  &none              &kp TAB
 &kp DOUBLE_QUOTES   &kp NUMBER_4             &kp N5        &kp NUMBER_6  &kp COLON      &trans           &trans  &kp LS(NUMBER_9)    &kp LG(RIGHT_BRACKET)  &kp UP_ARROW      &kp LG(BACKSLASH)  &kp SINGLE_QUOTE
 &kp KP_SLASH        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans           &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW         &kp DOWN_ARROW    &kp RIGHT_ARROW    &kp LG(RIGHT_ARROW)
 &mt LEFT_GUI COMMA  &mt LEFT_SHIFT NUMBER_0  &kp PERIOD    &kp DEL       &kp ENTER      &kp BACKSPACE    &trans  &trans                                                                          &none

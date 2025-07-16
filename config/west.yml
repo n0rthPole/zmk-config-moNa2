@@ -14,7 +14,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: n0rthPole
+      remote: kumamuk-git
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar

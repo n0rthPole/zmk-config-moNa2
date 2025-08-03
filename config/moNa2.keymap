@@ -250,7 +250,7 @@
 
         win_layer_1 {
             bindings = <
-&kp ESCAPE       &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &trans         &kp LS(TAB)     &kp LG(TAB)     &trans           &kp TAB
+&kp ESCAPE       &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &kp A          &kp LS(TAB)     &kp LG(TAB)     &trans           &kp TAB
 &kp KP_ASTERISK  &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON      &trans            &trans  &kp BACKSLASH  &mkp MB4        &kp UP_ARROW    &mkp MB5         &kp SINGLE_QUOTE
 &kp KP_SLASH     &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &kp KP_NUMLOCK    &trans  &kp LC(HOME)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(END)
 &mt LCTRL COMMA  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_DOT       &kp DEL          &kp ENTER      &kp BACKSPACE     &trans  &trans                                                          &trans

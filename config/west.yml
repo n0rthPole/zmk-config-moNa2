@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: kot149
       url-base: https://github.com/kot149
+    - name: yamaryu211
+      url-base: https://github.com/yamaryu211
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,5 +24,9 @@ manifest:
     - name: zmk-layout-shift
       remote: kot149
       revision: v1
+    - name: zmk-xy-snap-module
+      remote: yamaryu211
+      revision: main
+path: modules/zmk-xy-snap-module
   self:
     path: config

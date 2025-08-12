@@ -9,10 +9,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120
 #define MOUSE 13
 
-/* ▼ XYスナップモジュールのDTSIを取り込み（相対パスは要環境確認） */
-#include "../modules/zmk-xy-snap-module/dts/xy_snap_input_processor.dtsi"
-
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -236,21 +232,7 @@
             toggle-mode = "off";
             label = "LAYOUT_SHIFT_TOGGLE_OFF";
         };
-
- /* ▼ XYスナップのインスタンス。数値はお好みで調整 */
-        xy_snap_input_processor: xy_snap_input_processor {
-            compatible = "zmk,xy-snap-input-processor";
-            #input-processor-cells = <0>;
-            idle-timeout-ms = <200>; /* 入力停止でロック解除されるまで(ms) */
-            switch-threshold = <20>; /* 軸切替のしきい値(角度/比率ベースの閾値相当) */
-            allow-axis-switch; /* 軸の切り替えを許可（不要なら削除） */
-        };
-
     };
-
-        &default_input_listener {
-            input-processors = <&xy_snap_input_processor>;
-        };
 
     keymap {
         compatible = "zmk,keymap";

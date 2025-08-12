@@ -246,11 +246,11 @@
             allow-axis-switch; /* 軸の切り替えを許可（不要なら削除） */
         };
 
+    };
+
         &default_input_listener {
             input-processors = <&xy_snap_input_processor>;
         };
-
-    };
 
     keymap {
         compatible = "zmk,keymap";

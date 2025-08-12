@@ -248,7 +248,7 @@
 
         &default_input_listener {
             input-processors = <&xy_snap_input_processor>;
-};
+        };
 
     };
 

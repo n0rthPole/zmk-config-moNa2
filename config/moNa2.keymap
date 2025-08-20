@@ -249,7 +249,7 @@
 &mt LCTRL COMMA  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_DOT       &kp DEL          &kp ENTER      &kp BACKSPACE     &trans  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         win_layer_2 {
